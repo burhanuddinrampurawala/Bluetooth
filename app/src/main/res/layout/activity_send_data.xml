@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.send.SendData"
+    android:orientation="vertical">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:id="@+id/form"
+       android:layout_margin="5sp">
+       <EditText
+           android:id="@+id/text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textPersonName"
+           android:layout_margin="10sp"
+           tools:layout_editor_absoluteY="0dp"
+           tools:layout_editor_absoluteX="8dp" />
+
+       <Button
+           android:id="@+id/send"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Send"
+           android:layout_margin="10sp"
+           tools:layout_editor_absoluteY="0dp"
+           tools:layout_editor_absoluteX="18dp" />
+
+       <TextView
+           android:id="@+id/receive"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:layout_margin="10sp"
+           android:textSize="20sp"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="connecting..." />
+    </LinearLayout>
+</LinearLayout>
